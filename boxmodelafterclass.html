@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hrishikesh’s Awesome Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: aliceblue;
+            color: black;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px lightgray;
+        }
+
+        header, footer {
+            background-color: steelblue;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            border-radius: 5px;
+        }
+        
+        h1 {
+            margin: 0;
+        }
+
+        .main-image {
+            float: left;
+            width: 200px;
+            margin-right: 20px;
+            border-radius: 5px;
+        }
+
+        .sidebar {
+            float: right;
+            width: 25%;
+            background-color: lightcyan;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid powderblue;
+        }
+
+        .main-content {
+        }
+        
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        footer {
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Hrishikesh’s Decorated Website</h1>
+        </header>
+
+        <div class="content-area clearfix">
+
+            <div class="sidebar">
+                <h3>Quick Facts</h3>
+                <p>This sidebar is aligned using <strong>float: right;</strong>. It stays on the side while main content flows next to it.</p>
+            </div>
+            
+            <div class="main-content">
+                <h2>Welcome!</h2>
+
+                <img src="https://via.placeholder.com/200" alt="A placeholder image" class="main-image">
+                
+                <p>Sam wanted to decorate his page, so we used CSS! The image you see is using <strong>float: left;</strong> which makes this text wrap nicely around it.</p>
+                <p>Floating lets you take an element out of the normal document flow and push it to the left or right. Other content will then fill the available space. It's a great tool for creating multi-column layouts, just like this one!</p>
+            </div>
+
+        </div>
+
+        <footer>
+            <p>Page decorated with CSS floats!</p>
+        </footer>
+    </div>
+
+</body>
+</html>
