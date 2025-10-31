@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo classes and advance selecters</title>
+    <style>
+body{
+    background-color: blue ;
+}
+h1{
+    color: bisque;
+}
+a{
+    color:
+     aliceblue;
+}
+a:hover {
+color: aqua;
+}
+ul > li{
+font-weight: bolder;
+}
+ul li:nth-child(odd){color:wheat; }
+ul li :nth-child(even){color: aquamarine;}
+p::first-letter { font-size: larger; color: aquamarine ;}
+ul li::before {
+    content: "😁";
+}
+    </style>
+</head>
+<body>
+  <h1>Welcome to Ocean Discovery Club</h1>
+  <ul>
+<ul>
+    <li> Coral Reefs </li>
+    <li>Deep Sea</li>
+    <li>Marine Life</li>
+    <li>Tides</li>
+    <li>Shipwrecks</li>
+    <li>Conservation</li>
+</ul>
+
+<p>The ocean is a vast, interconnected body of salt water that covers most of Earth and shapes climate, weather, and ecosystems, from shallow coasts to the pitch‑black abyssal plains.</p> 
+<p>Waves, currents, and life thrive together: plankton feed entire food webs, coral reefs protect shores, and migrating whales travel thousands of miles across blue highways.</p>
+ <a href="#">ocean research log</a><br>
+ <a href="#">marine habitats</a><br>
+ <a href="#">learn more</a>
+</body>
+</html>
+
