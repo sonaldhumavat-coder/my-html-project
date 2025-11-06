@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope of Variables in Functions</title>
+</head>
+<body>
+    <h1>Scope of Variables in Functions</h1>
+    <p id="scope1"></p>
+    <p id="scope2"></p>
+    <p id="scope3">A variable declared inside a function has local scope, meaning it can only be accessed within that function. These variables are created when the function begins execution and are destroyed once the function finishes, making them ideal for temporary, function-specific data. Using local variables helps prevent naming conflicts with variables of the same name in other parts of the program. 
+</p>
+<button onclick="myfunction()">Calculate</button>
+<script>
+  var b=8 
+  function myfunction()
+  {
+var a=13
+document.getElementById("scope1").innerHTML=a*b
+  }
+ document.getElementById("scope2").innerHTML=a
+  
+</script>
+</body>
+</html>
