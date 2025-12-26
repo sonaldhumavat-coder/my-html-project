@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Functions and Trigonometry</title>
+</head>
+
+<body>
+
+
+    <h3>Sum of Arguments</h3>
+    <p id="sumResult"></p>
+
+    <h3>Trigonometric Values</h3>
+    <p id="trigoResult"></p>
+
+    <script>
+        function addNumbers(a, b, c) {
+            return a + b + c;
+        }
+
+        var sum = addNumbers(10, 20, 30);
+        document.getElementById("sumResult").innerHTML =
+            "Sum of arguments is: " + sum;
+
+        var degree = 30;
+        var radian = degree * Math.PI / 180;
+
+        var sine = Math.sin(radian);
+        var cosine = Math.cos(radian);
+        var tangent = Math.tan(radian);
+
+        document.getElementById("trigoResult").innerHTML =
+            "Sin 30° = " + sine + "<br>" +
+            "Cos 30° = " + cosine + "<br>" +
+            "Tan 30° = " + tangent;
+    </script>
+
+</body>
+</html>
