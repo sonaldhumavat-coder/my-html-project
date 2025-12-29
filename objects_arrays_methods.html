@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Objects and Arrays</title>
+</head>
+
+<body>
+
+    <h2>Story of the Project:</h2>
+
+    <p>
+        To print the values of object with its key and print the values of array
+        by its index number and to perform some methods in array created.
+    </p>
+
+    <h3>Object Values with Keys</h3>
+    <p id="objectData"></p>
+
+    <h3>Array Values Using Index</h3>
+    <p id="arrayData"></p>
+
+    <h3>Array Methods</h3>
+    <p id="arrayMethods"></p>
+
+    <script>
+        var student = {
+            name: "Tinu",
+            age: 10,
+            grade: 5
+        };
+
+        var objText = "";
+        for (var key in student) {
+            objText = objText + key + " : " + student[key] + "<br>";
+        }
+        document.getElementById("objectData").innerHTML = objText;
+
+        var fruits = ["Apple", "Banana", "Mango", "Orange"];
+
+        var arrayText = "";
+        for (var i = 0; i < fruits.length; i++) {
+            arrayText = arrayText + "Index " + i + " : " + fruits[i] + "<br>";
+        }
+        document.getElementById("arrayData").innerHTML = arrayText;
+
+        fruits.push("Grapes");
+        fruits.pop();
+
+        document.getElementById("arrayMethods").innerHTML =
+            "Array after push and pop methods: " + fruits.join(", ");
+    </script>
+
+</body>
+</html>
