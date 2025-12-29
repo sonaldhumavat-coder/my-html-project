@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Class and Inheritance</title>
+</head>
+
+<body>
+
+
+    <h3>Class Output</h3>
+    <p id="output"></p>
+
+    <script>
+        class Student {
+            constructor(name, age) {
+                this.name = name;
+                this.age = age;
+            }
+
+            showDetails() {
+                return "Name: " + this.name + ", Age: " + this.age;
+            }
+
+            static schoolName() {
+                return "Green Valley School";
+            }
+        }
+
+        class Result extends Student {
+            constructor(name, age, grade) {
+                super(name, age);
+                this.grade = grade;
+            }
+
+            showResult() {
+                return this.showDetails() + ", Grade: " + this.grade;
+            }
+        }
+
+        var student1 = new Result("Tinu", 10, "A");
+
+        document.getElementById("output").innerHTML =
+            Student.schoolName() + "<br>" +
+            student1.showResult();
+    </script>
+
+</body>
+</html>
