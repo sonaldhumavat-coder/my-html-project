@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Async Await Example</title>
+</head>
+
+<body>
+
+    <h3>Async and Await Output</h3>
+    <p id="output"></p>
+
+    <script>
+        function getNumber() {
+            return new Promise(function(resolve) {
+                setTimeout(function() {
+                    resolve(10);
+                }, 1000);
+            });
+        }
+
+        async function calculateResult() {
+            let value = await getNumber();
+            let result = value * 2;
+            document.getElementById("output").innerHTML =
+                "Result after async operation: " + result;
+        }
+
+        calculateResult();
+    </script>
+
+</body>
+</html>
