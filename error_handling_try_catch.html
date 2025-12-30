@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Try and Catch Error Handling</title>
+</head>
+
+<body>
+
+    <h3>Error Handling Output</h3>
+    <p id="output"></p>
+
+    <script>
+        try {
+            let a = 10;
+            let b = 0;
+
+            if (b === 0) {
+                throw "Division by zero error";
+            }
+
+            let result = a / b;
+            document.getElementById("output").innerHTML = result;
+        }
+        catch (error) {
+            document.getElementById("output").innerHTML =
+                "Error Message: " + error;
+        }
+    </script>
+
+</body>
+</html>
